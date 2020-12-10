@@ -1,5 +1,5 @@
-11. > **LEZIONE 12**
-     11. > *Consegna jQuery - Ese 12 Gioco del 15*
+12. > **LEZIONE 12**
+     12. > *Consegna jQuery - Ese 12 Gioco del 15*
      
 Riempita una matrice 4 x 4 con 15 numeri casuali da 1 a 15 e lasciata una cella vuota (in una posizione
 casuale). In corrispondenza del click su una cella numerata, il sistema controlla se una delle quattro celle
