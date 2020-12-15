@@ -20,8 +20,8 @@ aggiornandolo ad intervalli regolari di 1 secondo.
 - interrompere il timer.
 
 - Il voto viene calcolato nel modo seguente:
-- + 1 punto per ogni risposta esatta;
-- - 0,25 per ogni risposta sbagliata (e viene ricolorato di rosso la T o la F relative alla risposta
+- \+ 1 punto per ogni risposta esatta;
+- \- 0,25 per ogni risposta sbagliata (e viene ricolorato di rosso la T o la F relative alla risposta
 sbagliata);
 - 0 per ogni risposta non data.
 
