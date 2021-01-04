@@ -7,8 +7,8 @@ fotografia. Ad ogni refresh mostra a centro video tutte le informazioni di un'un
 random (nome, mail, data di nascita, indirizzo, numero di telefono, password).
 Fornisce anche un servizio /api attraverso il quale può restituire al chiamante un certo numero di
 record random in formato XML o JSON (che è il default, quindi può anche essere omesso).
-<a href="https://randomuser.me/api/?format=xml&results=5">Genera 5 utenti casuali in formato XML</a> 
-<a href="https://randomuser.me/api/?format=json&results=5">Genera 5 utenti casuali in formato JSON</a> 
+<a href="https://randomuser.me/api/?format=xml&results=5">Genera 5 utenti casuali in formato XML</a><br>
+<a href="https://randomuser.me/api/?format=json&results=5">Genera 5 utenti casuali in formato JSON</a><br>
 <a href="https://randomuser.me/api/?results=5&gender=male">Genera 5 utenti casuali in formato JSON non specificando</a> 
 
 Esempio di record JSON:
@@ -41,7 +41,4 @@ Realizzare la parte del sito con sfondo bianco con l’aggiunta di:
 - [x] Radio buttons di selezione Male/Female/Tutti;
 - [x] Checkbox relativi alle nat degli utenti da visualizzare (impostare manualmente 5 o 6 nomi: Brasile, Germania, Italia, etc.).
 
-Clicca <a https://github.com/vallauri-ict/randomuser-ivan-angjelovski>qui</a> per vedere il <a https://github.com/vallauri-ict/randomuser-ivan-angjelovski>Progetto</a> completato.
-=======
-<a href="https://github.com/vallauri-ict/randomuser-ivan-angjelovski"> Clicca qui per vedere il Progetto </a>
->>>>>>> cd96ba83e914ae489ed879ff607411fd6e7a9def
+Clicca <a href="https://github.com/vallauri-ict/randomuser-ivan-angjelovski">qui</a> per vedere il <a href="https://github.com/vallauri-ict/randomuser-ivan-angjelovski">Progetto</a> completato.
