@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 1. > **LEZIONE 1**
      1. > *Consegna Ajax - Ese 01 RandomUser*
 
@@ -6,7 +5,7 @@ Il sito <a href="https://randomuser.me">RandomUser</a> gestisce una folta anagra
 fotografia. Ad ogni refresh mostra a centro video tutte le informazioni di un'unica persona generata
 random (nome, mail, data di nascita, indirizzo, numero di telefono, password).
 Fornisce anche un servizio /api attraverso il quale può restituire al chiamante un certo numero di
-record random in formato XML o JSON (che è il default, quindi può anche essere omesso).
+record random in formato XML o JSON (che è il default, quindi può anche essere omesso).<br>
 <a href="https://randomuser.me/api/?format=xml&results=5">Genera 5 utenti casuali in formato XML</a><br>
 <a href="https://randomuser.me/api/?format=json&results=5">Genera 5 utenti casuali in formato JSON</a><br>
 <a href="https://randomuser.me/api/?results=5&gender=male">Genera 5 utenti casuali in formato JSON non specificando</a> 
