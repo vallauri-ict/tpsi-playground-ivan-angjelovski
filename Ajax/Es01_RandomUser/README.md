@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1. > **LEZIONE 1**
      1. > *Consegna Ajax - Ese 01 RandomUser*
 
@@ -40,3 +41,6 @@ Realizzare la parte del sito con sfondo bianco con l’aggiunta di:
 - [x] Checkbox relativi alle nat degli utenti da visualizzare (impostare manualmente 5 o 6 nomi: Brasile, Germania, Italia, etc.).
 
 Clicca <a https://github.com/vallauri-ict/randomuser-ivan-angjelovski>qui</a> per vedere il <a https://github.com/vallauri-ict/randomuser-ivan-angjelovski>Progetto</a> completato.
+=======
+<a href="https://github.com/vallauri-ict/randomuser-ivan-angjelovski"> Clicca qui per vedere il Progetto </a>
+>>>>>>> cd96ba83e914ae489ed879ff607411fd6e7a9def
