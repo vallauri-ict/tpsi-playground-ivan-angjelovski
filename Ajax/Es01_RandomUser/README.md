@@ -32,7 +32,8 @@ Esempio di record JSON:
 tps://randomuser.me/api/portraits/med/men/6.jpg","thumbnail":"https://rando
 muser.me/api/portraits/thumb/men/6.jpg"},
 "nat":"GB"
-}```
+}
+```
 
 Realizzare la parte del sito con sfondo bianco con l’aggiunta di:
 - [x] Pulsanti di navigazione (avanti e indietro);
