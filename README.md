@@ -2,6 +2,7 @@
 
 *Esercizi di programmazione in:*
 
+  - *XML & JSON*
   - *jQuery*
   - *Ajax*
 
