@@ -34,7 +34,7 @@ muser.me/api/portraits/thumb/men/6.jpg"},
 }
 ```
 
-Realizzare la parte del sito con sfondo bianco con l’aggiunta di:
+Realizzata la parte del sito con sfondo bianco con l’aggiunta di:
 - [x] Pulsanti di navigazione (avanti e indietro);
 - [x] Slider di selezione del numero di record da caricare;
 - [x] Radio buttons di selezione Male/Female/Tutti;
