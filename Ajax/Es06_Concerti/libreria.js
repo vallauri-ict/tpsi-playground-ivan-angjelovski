@@ -8,8 +8,13 @@ function inviaRichiesta(method, url, parameters={}) {
 		contentType = "application/json; charset=utf-8"
         parameters = JSON.stringify(parameters);
 	}
+
+    // $ajax restituisce un oggetto che si chiama PROMISE
+    // si mette in ascolto della risposta di $ajax, e quando
+    // $ajax risponde genera l'evento done o fail a seconda
+    // di come è terminata l'esecuzione
     return $.ajax({
-        "url": url,
+        "url": URL + url,
 		"data": parameters,
 		"type": method,   
 		"contentType": contentType, 
