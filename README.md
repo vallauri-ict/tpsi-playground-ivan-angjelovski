@@ -1,6 +1,6 @@
 # Repository TPSI di Ivan Angjelovski
 
-*Esercizi di programmazione in:*
+*Progetti:*
 
   - *XML & JSON*
   - *jQuery*
