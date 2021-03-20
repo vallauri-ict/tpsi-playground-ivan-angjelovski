@@ -30,7 +30,9 @@ window.onload = function () {
     btn.appendTo(btnBox);
     btn.on("click", visualizzaMappa);
   }
-
+	
+  $("button").eq(0).trigger("click");
+	
   function visualizzaMappa() {
     let url;
 	if ($(this).text() != "streetview") {
@@ -39,6 +41,8 @@ window.onload = function () {
 	  url = URL + "/streetview?" + setParams("streetview");
 	}
 	imgBox.prop("src", url);
+	  $("button").removeClass("active");
+	$(this).addClass("active");
   }
 
   function setParams(maptype) {
