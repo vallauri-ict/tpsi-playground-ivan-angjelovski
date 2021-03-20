@@ -30,9 +30,15 @@ window.onload = function () {
     btn.appendTo(btnBox);
     btn.on("click", visualizzaMappa);
   }
+<<<<<<< HEAD
   
   $("button").eq(0).trigger("click");
 
+=======
+	
+  $("button").eq(0).trigger("click");
+	
+>>>>>>> f3034b7317e2aa83a31072ae2678e85a43f420e7
   function visualizzaMappa() {
     let url;
 	if ($(this).text() != "streetview") {
@@ -41,8 +47,12 @@ window.onload = function () {
 	  url = URL + "/streetview?" + setParams("streetview");
 	}
 	imgBox.prop("src", url);
+<<<<<<< HEAD
 	
 	$("button").removeClass("active");
+=======
+	  $("button").removeClass("active");
+>>>>>>> f3034b7317e2aa83a31072ae2678e85a43f420e7
 	$(this).addClass("active");
   }
 
