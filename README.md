@@ -6,6 +6,7 @@
   - *jQuery*
   - *Ajax*
   - *Geolocation*
+  - *PHP*
 
 
 *NB: Se si vuole clonare la repository sul proprio PC, affinchè le applicazioni jQuery vengano avviate senza errori:*
