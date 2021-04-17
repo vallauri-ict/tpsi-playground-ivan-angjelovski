@@ -12,7 +12,30 @@
 		<script src="index.js"></script>
 	</head>	
 	<body>   
-		<h1>Registrazione avvenuta correttamente</h1>
-		
+		<h1>Pagina 2</h1> 
+		<?php
+			// step 1: lettura e controllo dei parametri
+			// 
+			if(isset($_REQUEST["txtNome"]))
+				$nome =	$_REQUEST["txtNome"];
+			else 
+				die("nome mancante");
+			
+			if(isset($_REQUEST["optIndirizzo"]))
+				$indirizzo = $_REQUEST["optIndirizzo"];
+			else 
+				die("indirizzo mancante");
+			
+			if(isset($_REQUEST["chkHobbies"]))
+			{
+				$hobbies = $_REQUEST["chkHobbies"];
+				$hobbies = implode(',', $hobbies);
+			}
+			else 
+				$hobbies = "";
+				
+				
+			echo("ciao mondo $hobbies");
+		?>
 	</body>
 </html>
