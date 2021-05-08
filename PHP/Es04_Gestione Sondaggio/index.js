@@ -18,6 +18,9 @@ function creaDiagramma(nSi, nNo, nNs){
 		  Width: 1,
         },
       ],
+      options: {
+        // responsive: false,
+      },
     },
   });
 }

@@ -71,10 +71,10 @@
             echo("<p>Si: $nSi <br>
                   No: $nNo <br>
                   Non so: $nNs</p>");
-            echo("<canvas id='idCanvas'></canvas>");
-
+            echo("<div style='margin:0 auto; width:400px; height:400px'><canvas id='idCanvas'></canvas></div>");
             echo("<script> creaDiagramma($nSi, $nNo, $nNs); </script>");
 
+            // salvataggio cookies sul client
             setcookie("sondaggio-$id", "true", time() + 60, "/");
 
             // step 5: chiudere la connessione

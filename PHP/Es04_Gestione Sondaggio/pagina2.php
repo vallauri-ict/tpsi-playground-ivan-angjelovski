@@ -23,6 +23,12 @@
 			{
 				die("Parametro mancante: ID");
 			}
+
+			// controllo cookies
+			if(isset($_COOKIE["sondaggio-$id"]))
+			{
+				die("<h2>Hai già votato questo sondaggio!</h2>");
+			}
 			
 			// step 2: connessione al database
 			$con = _connection("4b_sondaggi");
