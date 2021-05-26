@@ -54,6 +54,7 @@
 	
 	function _checkSession($key)
 	{
+		// session_start() automaticamente va a leggere il session id contenuto all'interno dei cookie
 		session_start();
 		if(!isset($_SESSION[$key]))
 		{

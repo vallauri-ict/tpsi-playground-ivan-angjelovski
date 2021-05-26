@@ -16,6 +16,13 @@ function inviaRichiesta(method, url, parameters={}) {
 		contentType = "application/json; charset=utf-8"
         parameters = JSON.stringify(parameters);
 	}
+    // inviaRichiesta restituisce una promise, la quale è dotata di due
+    // funzioni, fail e done
+    // se il codice che ritorna il server è 200 la promise passa per done
+    // se il codice che ritorna il server è diverso da 200 la promise passa per fail
+    
+    // caso particolare: se la promise non riesce a serializzare il json
+    // la promise passa lo stesso per fail anche se ha ricevuto response code 200
     return $.ajax({
         // non serve alcun tipo di concatenamento in quanto
         // il browser, automaticamente, richiede il file allo stesso
@@ -40,11 +47,11 @@ function errore(jqXHR, text_status, string_error) {
         // rimanda in dietro un numero diverso da 200 mostriamo semplicemente
         // l'errore che ci ritorna
     else if (jqXHR.status == 403)
-		window.location.href = "login.html";
+	    window.location.href = "login.html";
 	else
         alert("Server Error: " + jqXHR.status + " - " + jqXHR.responseText);
 }
 
 function generaNumero(a, b){
-	return Math.floor((b-a+1)*Math.random()) + a;
+	return Math.floor((b - a + 1) * Math.random()) + a;
 }

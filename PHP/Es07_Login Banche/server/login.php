@@ -26,6 +26,10 @@
 	
 	$con = _connection();
 	
+	// le query sono case unsensitive quindi se avessimo fatto il controllo
+	// della password con una AND qui non sarebbe stato giusto
+	// anche se in realtà la codifica md5 rende la password un'impronta
+	// quasi non eguagliabile da altre password
     $sql = "SELECT * FROM correntisti WHERE Nome = '$username'";
     
 	$rs = _execute($con,$sql);
@@ -53,8 +57,18 @@
 			$_SESSION["cCorrentista"] = $rs[0]["cCorrentista"];
 			$_SESSION["scadenza"] = time() + SCADENZA;
 			
+			// la session è sul server ma gli serve qualcosa per identificare il client
+			// che fa le richieste, dunque bisogna salvare questa sessione (session name e id)
+			// con cui il client gli dice al server chi è sostanzialmente
+			// session name e id non sono visibili, sono decisi dal server
+
+			// la gestione dei cookie da parte dei browser è trasparente, l'utente non deve
+			// fare nulla e il browser si salva questi cookie in un'area protetta sua
+			// ogni volta che viene aperta una pagina web il browser si va a vedere
+			// i cookie appartenenti a quel dominio e li rende disponibili al server
 			setcookie(session_name(), session_id(), time() + SCADENZA, "/");
-			
+
+			http_response_code(200); // default /!\ quando il servizio avviene con successo
 			echo('{"ris": "ok"}');
 		}
 	}
